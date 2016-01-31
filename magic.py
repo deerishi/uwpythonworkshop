@@ -8,37 +8,38 @@ import time
 driver=webdriver.Firefox()
 driver.get("http://www.google.com")
 inputelement=driver.find_element_by_name("q")
-inputelement.send_keys("University of Waterloo ")
+inputelement.send_keys("University of Waterloo Python Workshop mentors")
 inputelement.submit()
 button=driver.find_elements_by_class_name("searchbutton")
 inputelement.send_keys(Keys.RETURN)
 time.sleep(5)
-inputelement.send_keys(" Python Workshop")
-inputelement.submit()
-time.sleep(5)
 inputelement.clear()
 inputelement.send_keys(" Ivana Kajic")
 inputelement.submit()
-time.sleep(5)
-inputelement.send_keys(" University of Waterloo")
-inputelement.submit()
-time.sleep(5)
+time.sleep(4)
 inputelement.clear()
 inputelement.send_keys("Sean Aubin")
 inputelement.submit()
 time.sleep(5)
-inputelement.send_keys(" University of Waterloo")
+inputelement.clear()
+inputelement.send_keys("Alan Tsang University of Waterloo")
 inputelement.submit()
+time.sleep(5)
+inputelement.clear()
+inputelement.send_keys("Sajed Haque University of Waterloo")
+inputelement.submit()
+time.sleep(5)
+inputelement.clear()
+inputelement.send_keys(" Mariah Martin Shein University of Waterloo")
+inputelement.submit()
+time.sleep(5)
+inputelement.clear()
+inputelement.send_keys(" Irish Medina University of Waterloo")
+inputelement.submit()
+time.sleep(10)
 
 
+driver.quit()
 
-try:
-    # we have to wait for the page to refresh, the last thing that seems to be updated is the title
-    WebDriverWait(driver, 1000).until(EC.title_contains("vasant"))
-    #while True:
-    # You should see "cheese! - Google Search"
-   	#print driver.title
-	
-except KeyboardInterrupt:
-    driver.quit()
+    
 
