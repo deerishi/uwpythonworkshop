@@ -10,7 +10,7 @@ def sendEmail(fromaddr,toaddrs):
     server.login(username,password)
     for email in toaddrs:
         msg = "\r\n".join([
-      "From: barneyspoj@gmail.com",
+      "From: ", #enter you id here
       "Subject: Cool way of Sending Email",
       "",
       "Sending Emails from Python is fun"
