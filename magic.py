@@ -36,6 +36,10 @@ time.sleep(5)
 inputelement.clear()
 inputelement.send_keys(" Irish Medina University of Waterloo")
 inputelement.submit()
+time.sleep(5)
+inputelement.clear()
+inputelement.send_keys(" Deepak Rishi BITS")
+inputelement.submit()
 time.sleep(10)
 
 
