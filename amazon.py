@@ -28,7 +28,7 @@ def sendEmail(fromaddr,toaddrs):
     server.login(username,password)
     for email in toaddrs:
         msg = "\r\n".join([
-      "From: barneyspoj@gmail.com",
+      "From: ",# enter your email id here
       "Subject: DAKINE 2012 Super Tune Ski Snowboard Wax Kit 110V Price reduced to "+str(price)+"$",
       "",
       "Buy the following Racket asap \n "+BASE_URL
