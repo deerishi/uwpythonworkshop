@@ -1,11 +1,10 @@
 import smtplib
-from email.MIMEMultipart import MIMEMultipart
-from email.MIMEText import MIMEText
+
 
 def sendEmail(fromaddr,toaddrs):
     #msg='hi'
     username = fromaddr
-    password = 'resnick1'
+    password = ''#enter yor password here
     server = smtplib.SMTP('smtp.gmail.com:587')
     server.starttls()
     server.login(username,password)
@@ -25,8 +24,8 @@ def sendEmail(fromaddr,toaddrs):
             
     server.quit()
 
-fromaddr = 'barneyspoj@gmail.com'
-toaddrs  = ['drishi@uwaterloo.ca','deerishi@gmail.com','j35jung@uwaterloo.ca']
+fromaddr = '' #enter yor email id here 
+toaddrs  = [] #enter the list of to addresses here
 sendEmail(fromaddr,toaddrs)
 
 

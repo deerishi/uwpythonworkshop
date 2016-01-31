@@ -1,0 +1,8 @@
+python-gobject
+libnotify-bin
+libnotify-dev
+smtplib
+selenium
+requests
+configparser 3.5.0b2
+lxml 3.4.0

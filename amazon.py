@@ -1,19 +1,18 @@
 import time
 import requests
 import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
+
 from lxml import html
 import re
 from gi.repository import Notify
 import ConfigParser
 
-BASE_URL ='http://www.amazon.ca/Yonex-Nanoray-Badminton-Racket-Unstrung/dp/B013XQZYGM/ref=sr_1_3?s=sports&ie=UTF8&qid=1454218272&sr=1-3&keywords=badminton+rackets'
+BASE_URL ='http://www.amazon.ca/DAKINE-2012-Super-Tune-Snowboard/dp/B00AWNPY9W/ref=sr_1_2?s=sports&ie=UTF8&qid=1454264310&sr=1-2&keywords=Dakine+110V+Super+Tune+Kit'
 r = requests.get(BASE_URL)
 tree = html.fromstring(r.text)
-XPATH_SELECTOR = '//*[@id="priceblock_ourprice"]'
+XPATH_SELECTOR = '//*[@id="olp_feature_div"]/div/span/span'
 try:
-    str1=re.search('\d+,?\d+.\d+$',tree.xpath(XPATH_SELECTOR)[0].text[1:])
+    str1=re.search('\d+.\d+$',tree.xpath(XPATH_SELECTOR)[0].text[1:])
     #print 'regex is ',str1.group(0)
     print 'price is ',tree.xpath(XPATH_SELECTOR)[0].text[1:]
     price = float(str1.group(0))
@@ -23,14 +22,14 @@ except:
 def sendEmail(fromaddr,toaddrs):
     #msg='hi'
     username = fromaddr
-    password = 'resnick1'
+    password = '' #enter your password here
     server = smtplib.SMTP('smtp.gmail.com:587')
     server.starttls()
     server.login(username,password)
     for email in toaddrs:
         msg = "\r\n".join([
       "From: barneyspoj@gmail.com",
-      "Subject: Amazon Badminton Racket Price reduced to "+str(price)+"$",
+      "Subject: DAKINE 2012 Super Tune Ski Snowboard Wax Kit 110V Price reduced to "+str(price)+"$",
       "",
       "Buy the following Racket asap \n "+BASE_URL
       ])
@@ -43,7 +42,7 @@ def sendEmail(fromaddr,toaddrs):
             
     server.quit()
 
-notifications=["The price of the Racket just dropped to "+str(price)+"$"]
+notifications=["The price of the DAKINE 2012 Super Tune Ski Snowboard Wax Kit 110V just dropped to "+str(price)+"$"]
 Notify.init("Demo on Desktop Notifications")
 
 def sendNotifications(summary):
@@ -55,7 +54,7 @@ def sendNotifications(summary):
         notification.show()
 
 if price <1200:
-    sendNotifications("Buy the Badminton Racket!!")
-    fromaddr = 'barneyspoj@gmail.com'
-    toaddrs  = ['drishi@uwaterloo.ca','deerishi@gmail.com']
+    sendNotifications("Buy the DAKINE 2012 Super Tune Ski Snowboard Wax Kit 110V!!")
+    fromaddr = '' #enter your id here
+    toaddrs  = ['drishi@uwaterloo.ca','deerishi@gmail.com','python-workshop@lists.uwaterloo.ca','elaine.secord@uwaterloo.ca']
     sendEmail(fromaddr,toaddrs)
