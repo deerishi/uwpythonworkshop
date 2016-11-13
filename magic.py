@@ -3,7 +3,10 @@ from selenium.common.exceptions import TimeoutException
 import selenium
 from selenium.webdriver.common.keys import Keys
 import time
-driver=webdriver.Firefox()
+
+driver = webdriver.Firefox(executable_path='/home/drishi/CoolStuffinPython/geckodriver')
+
+#driver=webdriver.Firefox()
 driver.get("http://www.google.com")
 inputelement=driver.find_element_by_name("q")
 

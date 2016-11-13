@@ -1,9 +1,10 @@
 University of Waterloo Python Workshop mentors
 Ivana Kajic
-Sean Aubin
-Alan Tsang University of Waterloo
-Sajed Haque University of Waterloo
-Mariah Martin Shein University of Waterloo
-Irish Medina University of Waterloo
-Tim Hughes University of Waterloo
-Deepak Rishi BITS
+Mariah Martin Shein images University of Waterloo
+Alan Tsang images University of Waterloo
+Sajed Haque picture University of Waterloo
+Irish Medina images University of Waterloo
+Ryan Neufeld images University of Waterloo
+Stacy Gaikovaia images University of Waterloo
+Jasmine Ren  University of Waterloo
+Deepak Rishi images University of Waterloo
