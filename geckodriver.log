@@ -435,3 +435,46 @@
 [Child 2985] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-3wLmb4/firefox-49.0.2+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 316
 [Child 2985] ###!!! ABORT: Aborting on channel error.: file /build/firefox-3wLmb4/firefox-49.0.2+build2/ipc/glue/MessageChannel.cpp, line 2052
 [Child 2985] ###!!! ABORT: Aborting on channel error.: file /build/firefox-3wLmb4/firefox-49.0.2+build2/ipc/glue/MessageChannel.cpp, line 2052
+1510984453119	geckodriver	INFO	Listening on 127.0.0.1:44924
+1510984454075	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.hwjx9Fq6rXXr
+1510984454077	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1510984454099	geckodriver::marionette	INFO	Connecting to Marionette on localhost:42976
+1510984458862	Marionette	INFO	Enabled via --marionette
+1510984465314	Marionette	INFO	Listening on port 42976
+1510984465381	Marionette	DEBUG	Register listener.js for window 2147483649
+1510984465448	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1510984466096	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1510984466097	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1510984466305	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.google.ca/?gfe_rd=cr&dcr=0&ei=EcsPWqC2I6-Q8QenkYBI&gws_rd=ssl"
+1510984466742	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.google.ca/?gfe_rd=cr&dcr=0&ei=EcsPWqC2I6-Q8QenkYBI&gws_rd=ssl"
+1510984586686	geckodriver	INFO	Listening on 127.0.0.1:33382
+1510984587690	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.tabZhSZYOipZ
+1510984587691	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1510984587697	geckodriver::marionette	INFO	Connecting to Marionette on localhost:46325
+1510984588315	Marionette	INFO	Enabled via --marionette
+1510984591016	Marionette	INFO	Listening on port 46325
+1510984591215	Marionette	DEBUG	Register listener.js for window 2147483649
+1510984591229	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1510984591595	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1510984591595	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1510984591678	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.google.ca/?gfe_rd=cr&dcr=0&ei=j8sPWtvhEcf_8Afn0L3YDg&gws_rd=ssl"
+1510984592136	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.google.ca/?gfe_rd=cr&dcr=0&ei=j8sPWtvhEcf_8Afn0L3YDg&gws_rd=ssl"
+1510984641089	geckodriver	INFO	Listening on 127.0.0.1:41063
+1510984642112	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.ES6b9n9Or0AT
+1510984642113	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1510984642124	geckodriver::marionette	INFO	Connecting to Marionette on localhost:42497
+1510984642744	Marionette	INFO	Enabled via --marionette
+1510984645362	Marionette	INFO	Listening on port 42497
+1510984645561	Marionette	DEBUG	Register listener.js for window 2147483649
+1510984645579	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1510984645958	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1510984645958	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1510984646047	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.google.ca/?gfe_rd=cr&dcr=0&ei=xcsPWu3pJauQ8Qedp43wDg&gws_rd=ssl"
+1510984646418	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.google.ca/?gfe_rd=cr&dcr=0&ei=xcsPWu3pJauQ8Qedp43wDg&gws_rd=ssl"
+JavaScript error: jar:file:///usr/lib/firefox/omni.ja!/components/nsUrlClassifierListManager.js, line 324: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
+JavaScript error: jar:file:///usr/lib/firefox/omni.ja!/components/nsUrlClassifierListManager.js, line 324: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
+JavaScript error: jar:file:///usr/lib/firefox/omni.ja!/components/nsUrlClassifierListManager.js, line 324: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
+JavaScript error: jar:file:///usr/lib/firefox/omni.ja!/components/nsUrlClassifierListManager.js, line 324: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+JavaScript error: jar:file:///usr/lib/firefox/omni.ja!/components/nsUrlClassifierListManager.js, line 324: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
+JavaScript error: jar:file:///usr/lib/firefox/omni.ja!/components/nsUrlClassifierListManager.js, line 324: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
